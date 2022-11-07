@@ -60,3 +60,6 @@ class TestVarasto(unittest.TestCase):
         self.assertEqual(self.varasto.saldo, 8)
         self.varasto.ota_varastosta(-1)
         self.assertEqual(self.varasto.saldo, 8)
+        
+    def test_string_esitysta(self):
+        self.assertEqual(self.varasto.__str__(), "saldo = 0, vielä tilaa 10")
